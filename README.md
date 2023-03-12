@@ -1,3 +1,5 @@
+<h3> Lossless Data Compression Program </h3>
+
 1. About this Project <br>
     This is a simple data compression & decompression code written using the zlib library. Currently, it only works for .txt files and is not intended to use for other file formats. <br>
     The motivation to write this program was mainly learning. <br>
