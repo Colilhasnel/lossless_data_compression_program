@@ -3,7 +3,7 @@
     The motivation to write this program was mainly learning.
 
 2. How to Use
-    i. First, open the "compression_txt_files.exe". 
+    i. First, open the "compression_txt_files.exe". <br>
         - Enter the name of the file to be compressed. E.g. "story1.txt"
         - Include an extension while entering the filename.
         - You write the path if the file is not in the same directory.
