@@ -1,16 +1,7 @@
 <h3> Lossless Data Compression Program </h3>
 
-<style>
-    p1{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 50px;
-        margin-right: 0px;
-    }
-</style>
-
 1. About this Project <br>
-</p1>
+<p1 style  = "margin: 0px 0px 0px 50px">
     This is a simple data compression & decompression code written using the zlib library. Currently, it only works for .txt files and is not intended to use for other file formats. <br>
     The motivation to write this program was mainly learning. <br>
 <br>
