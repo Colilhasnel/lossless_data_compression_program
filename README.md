@@ -1,11 +1,8 @@
 <h3> Lossless Data Compression Program </h3><br>
-<p>
 1. About this Project <br>
 &nbsp;&nbsp;This is a simple data compression & decompression code written using the zlib library. Currently, it only works for .txt files and is not intended to use for other file formats. <br>
     The motivation to write this program was mainly learning. <br>
 <br>
-</p>
-<p>
 2. How to Use <br>
 &nbsp;&nbsp;i. First, open the "compression_txt_files.exe". <br>
         - Enter the name of the file to be compressed. E.g. "story1.txt". <br>
@@ -24,7 +21,6 @@
         - Output filename format = "decompressed_<inputfilename>". <br> 
         - E.g. filename = "compressed_story1.txt.bin"; Output filename = "decompressed_compressed_story1.txt". <br>
 <br>
-</p>
 3. Features & Limitations <br>
     i. The executable files are independent of any dependencies, i.e. they can be used without any other library or drivers. <br>
     ii. Fast & Lossless Data Compression. <br>
