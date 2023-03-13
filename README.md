@@ -38,7 +38,7 @@
     iii. Decompression Ratio = (Decompressed_File_Size / Compressed_File_Size) *100 <br>
     iv. Decompression Speed = (Decompressed_File_Size / Time_taken_for_decompression) <br>
 <br>
-7. Source Code <br>
+5. Source Code <br>
     - I have put the source code in the "_code" directory. Code for both compression and decompression is available with proper comments. <br>
     - Feel free to modify and use the source as you see fit. <br>
 <br>
