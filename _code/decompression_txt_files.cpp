@@ -1,3 +1,4 @@
+#include <chrono>
 #include <fstream>
 #include <iostream>
 #include <zlib.h>
@@ -28,9 +29,18 @@ int main()
     vector<char> dest(src.size() * 2);
     uLongf destlen = dest.size();
 
+    // Starting clock to mearsure decompression time
+    auto start = chrono::high_resolution_clock::now();
+
     // Using uncompress function from zlib
     uncompress(reinterpret_cast<Bytef *>(dest.data()), &destlen, src.data(), src.size());
 
+    // Calculating Time
+    auto end = chrono::high_resolution_clock::now();
+    chrono::duration<double> elapsed = end - start;
+    double decompression_time = elapsed.count();
+
+    // Resizing Destination vector
     dest.resize(destlen);
 
     // Opening Output file with original extension of .txt
@@ -40,7 +50,18 @@ int main()
     outfile1.write(reinterpret_cast<const char *>(dest.data()), dest.size());
 
     // Can also check for unsuccesful decompression through value returned by uncompress function
-    cout << "Decompression successful. Press Enter to continue....." << endl;
+    cout << "Decompression successful." << endl;
+
+    // Displaying Metrics
+    size_t compressed_size = src.size();
+    size_t decompressed_size = dest.size();
+    double decompression_ratio = (decompressed_size / (double)compressed_size) * 100;
+    double decompression_speed = decompressed_size / decompression_time;
+    cout << "Compressed File Size = " << compressed_size << " bytes" << endl;
+    cout << "Decomressed File Size = " << decompressed_size << " bytes" << endl;
+    cout << "Decompression Ratio = " << decompression_ratio << " %" << endl;
+    cout << "Decompression Speed = " << decompression_speed << " bytes per second" << endl;
+    cout << "Press Enter to continue....." << endl;
     cin.ignore();
     cin.get();
 

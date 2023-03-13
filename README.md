@@ -1,10 +1,11 @@
 <h3> Lossless Data Compression Program </h3><br>
+
 1. About this Project <br>
-&nbsp;&nbsp;This is a simple data compression & decompression code written using the zlib library. Currently, it only works for .txt files and is not intended to use for other file formats. <br>
+    This is a simple data compression & decompression code written using the zlib library. Currently, it only works for .txt files and is not intended to use for other file formats. <br>
     The motivation to write this program was mainly learning. <br>
 <br>
 2. How to Use <br>
-&nbsp;&nbsp;i. First, open the "compression_txt_files.exe". <br>
+    i. First, open the "compression_txt_files.exe". <br>
         - Enter the name of the file to be compressed. E.g. "story1.txt". <br>
         - Include an extension while entering the filename. <br>
         - You write the path if the file is not in the same directory. <br>
@@ -23,12 +24,19 @@
 <br>
 3. Features & Limitations <br>
     i. The executable files are independent of any dependencies, i.e. they can be used without any other library or drivers. <br>
-    ii. Fast & Lossless Data Compression. <br>
-    iii. Can be used for many textfiles, just by entering the name or path. <br>
-    iv. I have included sample file in the "_test_samples" directory. <br>
+    ii. Displays Metrics after compression or decompression is done. <br>
+    iii. Fast & Lossless Data Compression. <br>
+    iv. Can be used for many textfiles, just by entering the name or path. <br>
+    v. I have included sample file in the "_test_samples" directory. <br>
 <br>
-    v. Only available for .txt files <br>
-    vi. Sometimes end data is lost for large files(Working on it) <br>
+    vi. Only available for .txt files <br>
+    vii. Sometimes end data is lost for large files(Working on it) <br>
+<br>
+4. Formulas Used <br>
+    i. Compression Ratio = (Compressed_File_Size / Original_File_Size) *100 <br>
+    ii. Compression Speed = (Compressed_File_Size / Time_taken_for_compression) <br>
+    iii. Decompression Ratio = (Decompressed_File_Size / Compressed_File_Size) *100 <br>
+    iv. Decompression Speed = (Decompressed_File_Size / Time_taken_for_decompression) <br>
 <br>
 7. Source Code <br>
     - I have put the source code in the "_code" directory. Code for both compression and decompression is available with proper comments. <br>
